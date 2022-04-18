@@ -1,0 +1,248 @@
+body{
+    background-color:red;
+}
+
+
+
+.burmenu input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+
+}
+
+.burmenu input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+  background-color: black;
+
+}
+
+/* .burmenu input[type="checkbox"]:checked ~ .logo{
+  display: none;
+} */
+        /* #dropdown{
+            display:none;
+        }
+         */
+
+        .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 32px;
+    right: 36px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+  z-index:2;
+}
+
+.hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+  z-index:2;
+  background-color: red;
+}
+
+.hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+  z-index:2;
+ 
+}
+.li1{
+    margin-top:2%;
+}
+.li2{
+    margin-top:50%;
+}
+.footer{
+    font-family: 'Iceberg', cursive;
+    font-size:12px;
+    position:absolute;
+    bottom: 0;
+}
+section{
+  margin-top: 3%;
+  margin-left: 2%;
+  display:flex;
+  justify-content:space-between;
+}
+section button{
+  border:2px solid white;
+  border-radius:10px;
+  background:none;
+  height: 80%;
+  width: 35%;
+  color:white;
+  margin-left: 15px;
+  font-family: 'Iceberg', cursive;
+  font-size:15px;
+  cursor:pointer;
+}
+section button a{
+  text-decoration:none;
+  color:white;
+}
+.content{
+  display: flex;
+  margin-left: 3%;
+  flex-wrap: wrap;
+  color:white;
+}
+.carte{
+    border-radius:10px;
+    border:solid 3px white;
+    width: 46%;
+    height: 280px;
+    margin-right:2%;
+    margin-top:3%;
+    display: flex;
+    
+}
+
+.cart{
+  border-radius:10px;
+  border:solid 3px RED;
+    width: 30%;
+    height: 350px;
+    margin-right:2%;
+    margin-top:3%;
+}
+.pic{
+  width:50%;
+}
+.pic img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  border-radius:5px 0 0 5px;
+}
+.contentpost{
+  font-family: 'Iceberg', cursive;
+  margin-left: 2%;
+}
+.desc{
+  max-width: 240px;
+  max-height: 35%;
+  overflow: auto;
+}
+.active{
+  border-bottom:solid 2px red;
+}
+.btnsec{
+  width:60%;
+}
+.addP{
+  color: white;
+    width: 17%;
+    display: flex;
+    align-items: center;
+    font-family: 'Iceberg', cursive;
+}
+.addP a{
+  width:100%;
+}
+.addP img{
+  width:20px;
+}
+.addP p{
+  width: 100%;
+}
+.end{
+  background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 3%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+    font-family: 'Iceberg', cursive;
+    font-weight:bold;
+}
+.container{
+  padding-bottom: 2%;
+}
+
+#operclose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  padding: 6px;
+  }
+
+.addPost{
+  background:white;
+  border-radius:10px;
+  color:black;
+  display:flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 35%;
+  margin-left: 27.5%;
+  position:fixed;
+  top: 20%;
+  display: none;
+}
+.addPost form{
+  display:flex;
+  flex-direction: column;
+  
+}
+.addPost h3{
+  text-align: center;
+  font-family: 'Iceberg', cursive;
+}
+.addPost form select{
+  padding: 5px 8px;
+    width: 100%;
+    box-shadow: none;
+    background: transparent;
+    -webkit-appearance: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    background: none;
+}
+.addPost form textarea{
+  padding: 5px 8px;
+    max-width: 95%;
+    min-width: 95%;
+    box-shadow: none;
+    -webkit-appearance: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    color: black;
+    background: none;
+}
+.btnPost{
+  border: 2px solid black;
+    border-radius: 20px;
+    background: none;
+    /* height: 72%; */
+}
