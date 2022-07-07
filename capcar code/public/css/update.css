@@ -1,0 +1,299 @@
+body{
+    background: linear-gradient(to top,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%),url(../ressources/back2.jpg);
+    min-height: 95vh;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    /* overflow-y:hidden; */
+    overflow-x:hidden;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+  background: black;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  /* border: 2px solid  rgb(0, 0, 0); */
+  }
+nav{
+    display:flex;
+    justify-content: space-between;
+    margin-top:2%;
+}
+.dlogo{
+    width:9.9%;
+}
+
+.logo{
+    width:100%;
+    height:auto;
+    margin-left:10%;
+}
+nav .menuli {
+    display: flex;
+    margin-right:6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .menuli li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav .menuli a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: 'Iceberg', cursive;
+}
+.burmenu{
+    margin-right:3%;
+    margin-top: 1%;
+}
+.menu{
+    width: 25px;
+}
+.menu-items{
+    background-color: white;
+    text-decoration: none;
+    color: Black;
+    padding: 4%;
+    width: 7%;
+    margin-top: -2%;
+    border-radius: 10px 0 10px 10px;
+    transition: transform 0.5s ease-in-out;
+    transform: translate(40%);
+    z-index:1;
+    position: absolute;
+    text-align:center;
+}
+.menu-items li{
+    list-style: none;
+}
+.menu-items a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Iceberg', cursive;
+}
+
+.burmenu input[type="checkbox"]:checked ~ .menu-items {
+transform: translate(-88%);
+
+}
+
+.burmenu input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+transform: rotate(45deg);
+background-color: black;
+
+}
+
+.burmenu input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+transform: scaleY(0);
+
+}
+
+.burmenu input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+transform: rotate(-45deg);
+background-color: black;
+
+}
+
+/* .burmenu input[type="checkbox"]:checked ~ .logo{
+display: none;
+} */
+/* #dropdown{
+    display:none;
+}
+ */
+
+.checkbox {
+position: absolute;
+display: block;
+height: 32px;
+width: 32px;
+top: 32px;
+right: 36px;
+z-index: 5;
+opacity: 0;
+cursor: pointer;
+}
+
+.hamburger-lines {
+display: block;
+height: 26px;
+width: 32px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.hamburger-lines .line {
+display: block;
+height: 4px;
+width: 100%;
+border-radius: 10px;
+background: white;
+}
+
+.hamburger-lines .line1 {
+transform-origin: 0% 0%;
+transition: transform 0.4s ease-in-out;
+z-index:2;
+}
+
+.hamburger-lines .line2 {
+transition: transform 0.2s ease-in-out;
+z-index:2;
+background-color: red;
+}
+
+.hamburger-lines .line3 {
+transform-origin: 0% 100%;
+transition: transform 0.4s ease-in-out;
+z-index:2;
+
+}
+.li1{
+margin-top:2%;
+}
+.li2{
+margin-top:50%;
+}
+.footer{
+font-family: 'Iceberg', cursive;
+font-size:12px;
+position:absolute;
+bottom: 0;
+}
+
+.addPost{
+background:none;
+border-radius:10px;
+color:white;
+display:flex;
+flex-direction: column;
+padding: 15px;
+width: 35%;
+margin-left: 30%;
+position:fixed;
+top: 23%;
+border:solid 2px white;
+}
+.addPost form
+{
+display:flex;
+flex-direction: column;
+
+}
+.addPost h2{
+text-align: center;
+color:red;
+font-family: 'Iceberg', cursive;
+}
+.addPost form select{
+padding: 5px 8px;
+width: 100%;
+box-shadow: none;
+background: transparent;
+/* -webkit-appearance: none; */
+border: 2px solid white;
+border-radius: 10px;
+overflow: hidden;
+background: none;
+color:white;
+-moz-appearance: black;
+appearance: none;
+background:black;
+}
+.addPost form textarea{
+padding: 5px 8px;
+max-width: 95%;
+min-width: 95%;
+box-shadow: none;
+-webkit-appearance: none;
+border: 2px solid white;
+border-radius: 10px;
+overflow: hidden;
+color: white;
+background: none;
+}
+.inputPrice{
+padding: 5px 8px;
+width: 95%;
+box-shadow: none;
+background: transparent;
+-webkit-appearance: none;
+border: 2px solid white;
+border-radius: 10px;
+overflow: hidden;
+background: none;
+color:white;
+}
+.btnPost{
+border: 2px solid white;
+border-radius: 20px;
+background: none;
+/* height: 72%; */
+width: 37%;
+color: white;
+margin-left: 33%;
+font-family: 'Iceberg', cursive;
+font-size: 15px;
+cursor: pointer;
+align-items: center;
+}
+::placeholder {
+color: white;
+}
+@media only screen and (max-width: 600px) {
+body{
+min-height: 99vh;
+
+}
+nav  .menuli{
+display:none;
+}
+.menu-items {
+display:none;
+width: 50%;
+margin-top: -10%;
+padding: 6%;
+margin-left: 50px;
+}
+.burmenu input[type="checkbox"]:checked ~ .menu-items {
+display:block;
+transform: translate(-103%);
+
+}
+.li1 {
+margin-top: 20%;
+}
+.checkbox{
+top: 6px;
+right: 17px;
+}
+.footer{
+margin-left:50px;
+}
+.addPost{
+width: 87%;
+margin-left: 2%;
+}
+.logo {
+width: 200%;
+}
+}
